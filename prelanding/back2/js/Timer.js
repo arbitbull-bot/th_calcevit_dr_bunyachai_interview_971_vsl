@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const timerWrap = document.querySelector('.timer');
   const updateTimer = () => {
     const now = new Date().getTime();
-    const endTime = now + 35 * 60 * 1000;
+    const endTime = now + 5 * 60 * 1000;
     const interval = setInterval(() => {
       const currentTime = new Date().getTime();
       const distance = endTime - currentTime;
@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      // Оновлення таймера
       document.querySelector('[data-adc-number="H2"]').textContent = Math.floor(hours / 10);
       document.querySelector('[data-adc-number="H1"]').textContent = hours % 10;
       document.querySelector('[data-adc-number="M2"]').textContent = Math.floor(minutes / 10);

@@ -1,14 +1,13 @@
-
 <!DOCTYPE html>
 <html dir="ltr" lang="th">
 
 <head>
-    <meta charset="utf-8">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <title>Calcevit</title>
     <link rel="icon" type="image/png" href="./images/favicon.ico">
     <script src="./js/common.js"></script>
     <script src="./js/Timer.js"></script>
+    <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <link href="./css/style.css" rel="stylesheet">
 <script src="../js/preview.js"></script>
@@ -19,7 +18,7 @@
         <section class="present">
             <div class="container">
                 <div class="present__wrap">
-                    <div class="logo" aria-label="Calcevit">Calcevit</div>
+                    <div class="logo"><img alt="Logo" src="./images/logo.png"></div>
                     <div class="title"> บรรเทาอาการปวดภายใน 15 นาที! </div>
                     <p class="present__text"> สำหรับอาการปวดหลัง ปวดกล้ามเนื้อ และข้อ, ข้อเสื่อม และข้ออักเสบ </p>
                     <div class="button__wrap"><button class="pre_toform button__text"> สั่งซื้อ </button></div>
@@ -84,30 +83,43 @@
                         <li class="offer__item show_02"> ผ่อนคลายกล้ามเนื้อหลังการออกกำลังกาย </li>
                         <li class="offer__item show_03"> สำหรับอาการปวดที่เกิดจากการสัมผัสอุณหภูมิต่ำ </li>
                     </ul>
+                    
                     <div class="timer__wrap">
-                        <div class="timer"><span class="timer__item" data-adc-timer="H"><span class="timer__number" data-adc-number="H2">0</span><span class="timer__number" data-adc-number="H1">0</span></span><span class="timer__delimiter">:</span><span class="timer__item" data-adc-timer="M"><span class="timer__number" data-adc-number="M2">3</span><span class="timer__number" data-adc-number="M1">5</span></span><span class="timer__delimiter">:</span><span class="timer__item" data-adc-timer="S"><span class="timer__number" data-adc-number="S2">0</span><span class="timer__number" data-adc-number="S1">0</span></span></div><span class="timer__text">
+                        <div class="timer"><span class="timer__item" data-adc-timer="H"><span class="timer__number"
+                                    data-adc-number="H2">0</span><span class="timer__number"
+                                    data-adc-number="H1">0</span></span><span class="timer__delimiter">:</span><span
+                                class="timer__item" data-adc-timer="M"><span class="timer__number"
+                                    data-adc-number="M2">0</span><span class="timer__number"
+                                    data-adc-number="M1">5</span></span><span class="timer__delimiter">:</span><span
+                                class="timer__item" data-adc-timer="S"><span class="timer__number"
+                                    data-adc-number="S2">0</span><span class="timer__number"
+                                    data-adc-number="S1">0</span></span></div><span class="timer__text">
                             ข้อเสนอสุดพิเศษ! ส่วนลด 50%
                             เฉพาะวันนี้เท่านั้น </span>
                     </div>
-                    </div>
+                    
+                </div>
             </div>
         </section>
         <section class="order">
             <div class="container">
                 <div class="order__wrap">
-                    <div class="logo" aria-label="Calcevit">Calcevit</div>
+                    <div class="logo"><img alt="Logo" src="./images/logo.png"></div>
                     <div class="mobile__wrap">
                         <div class="title"> มอบความอิสระในการเคลื่อนไหว! </div>
                         <div class="price price_mobile"><span class="price__item price__item_old">
-                                <x-oldprice>1980</x-oldprice> <x-currency>฿</x-currency> </span><span class="price__item price__item_new"> <x-newprice>990</x-newprice>
+                                <x-oldprice>1980</x-oldprice> <x-currency>฿</x-currency> </span><span
+                                class="price__item price__item_new"> <x-newprice>990</x-newprice>
                                 <x-currency>฿</x-currency> </span></div>
                     </div>
                     <div class="form__wrap">
-                        <form action="" method="post" id="order_form">
+                        <form action="#" method="post" id="order_form">
                             <input type="hidden" name="subid5" value="back_vsl_form">
-                            <input type="hidden" name="click_id" value="">
-                            <div class="form__field"><input name="name" placeholder="ชื่อ" type="text" minlength="2" required></div>
-                            <div class="form__field"><input class="only_number" name="phone" placeholder="+66" minlength="8" maxlength="16" required type="tel" inputmode="tel" autocomplete="tel"></div>
+                            <input type="hidden" name="click_id" value="preview" />
+                            <div class="form__field"><input name="name" placeholder="ชื่อ" type="text" minlength="2"
+                                    required></div>
+                            <div class="form__field"><input class="only_number" name="phone" placeholder="+66" inputmode="tel" autocomplete="tel"
+                                    minlength="8" maxlength="16" required type="tel"></div>
                             <div class="price"><span class="price__item price__item_old"> <x-oldprice>1980</x-oldprice>
                                     <x-currency>฿</x-currency> </span><span class="price__item price__item_new">
                                     <x-newprice>990</x-newprice> <x-currency>฿</x-currency> </span></div>
